@@ -5,16 +5,13 @@ import Timeline, { type TimelineEntry } from "@/components/Timeline";
 import { education, researchExperience } from "@/data/research";
 import { teachingItems } from "@/data/teaching";
 import { achievements } from "@/data/achievements";
+import { profile } from "@/data/profile";
+import { startYear } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "CV",
   description: "Academic timeline and downloadable CV for Md Imam Ahasan.",
 };
-
-function startYear(period: string): number {
-  const match = period.match(/\d{4}/);
-  return match ? parseInt(match[0], 10) : 0;
-}
 
 const timelineEntries: TimelineEntry[] = [
   ...education.map((e) => ({
@@ -71,6 +68,22 @@ export default function CvPage() {
       <p className="mt-4 text-muted">
         A browsable summary below; download the PDF for the full,
         application-ready version.
+      </p>
+
+      <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+        {profile.social
+          .filter((s) => ["scholar", "orcid", "openreview"].includes(s.icon))
+          .map((s) => (
+            <a
+              key={s.label}
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent underline underline-offset-2 hover:opacity-80"
+            >
+              {s.label}
+            </a>
+          ))}
       </p>
 
       <div className="mt-10">

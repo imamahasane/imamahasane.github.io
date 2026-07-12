@@ -64,13 +64,23 @@ export interface TeachingItem {
 export interface SocialLink {
   label: string;
   url: string;
-  icon: "github" | "linkedin" | "mail" | "graduation-cap" | "file-text";
+  icon:
+    | "github"
+    | "linkedin"
+    | "mail"
+    | "graduation-cap"
+    | "file-text"
+    | "scholar"
+    | "orcid"
+    | "openreview";
 }
 
 export interface Profile {
   name: string;
   tagline: string;
   email: string;
+  secondaryEmail?: string;
+  wechatId?: string;
   affiliation: string;
   location: string;
   social: SocialLink[];

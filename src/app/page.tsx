@@ -1,14 +1,27 @@
 import Link from "next/link";
 import { profile } from "@/data/profile";
-import { firstAuthorPublications } from "@/data/publications";
+import { firstAuthorPublications, publications } from "@/data/publications";
 import { achievements } from "@/data/achievements";
 import Section from "@/components/Section";
 import PublicationCard from "@/components/PublicationCard";
 import SocialLinks from "@/components/SocialLinks";
 import AvatarPlaceholder from "@/components/AvatarPlaceholder";
 import MotionSection from "@/components/MotionSection";
+import StatsStrip from "@/components/StatsStrip";
+import AchievementCard from "@/components/AchievementCard";
+import { startYear } from "@/lib/utils";
 
-const topAward = achievements.find((a) => a.id === "cqu-outstanding-graduate");
+const stats = [
+  { value: String(publications.length), label: "Publications" },
+  { value: String(firstAuthorPublications.length), label: "First-Author" },
+  { value: "Top 1%", label: "International Cohort" },
+  { value: "KAIST", label: "Collaboration" },
+];
+
+const recentHighlights = achievements
+  .filter((a) => a.category !== "service")
+  .sort((a, b) => startYear(b.date) - startYear(a.date))
+  .slice(0, 3);
 
 const personJsonLd = {
   "@context": "https://schema.org",
@@ -77,15 +90,34 @@ export default function Home() {
         </div>
       </Section>
 
-      {topAward && (
-        <Section width="wide" className="py-0">
-          <p className="rounded-md border border-border bg-accent-soft px-4 py-3 text-sm text-foreground">
-            <span className="font-medium text-accent">{topAward.title}</span>
-            {" — "}
-            {topAward.description}
-          </p>
-        </Section>
-      )}
+      <Section width="wide" className="py-0">
+        <MotionSection>
+          <StatsStrip stats={stats} />
+        </MotionSection>
+      </Section>
+
+      <Section width="wide">
+        <MotionSection>
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+            <h2 className="font-serif text-2xl font-semibold text-foreground">
+              Recent Highlights
+            </h2>
+            <Link
+              href="/achievements"
+              className="text-sm text-accent underline underline-offset-4 hover:opacity-80"
+            >
+              View all achievements
+            </Link>
+          </div>
+        </MotionSection>
+        <div className="space-y-4">
+          {recentHighlights.map((item, i) => (
+            <MotionSection key={item.id} index={i}>
+              <AchievementCard item={item} />
+            </MotionSection>
+          ))}
+        </div>
+      </Section>
 
       <Section width="wide">
         <MotionSection>

@@ -5,9 +5,16 @@ export const profile: Profile = {
   tagline:
     "Computer Science Researcher working on Physics-Informed Deep Learning and Medical AI.",
   email: "emamahasane@gmail.com",
+  secondaryEmail: "emamahasane@stu.cqu.edu.cn",
+  wechatId: "imamahasane",
   affiliation: "Chongqing University",
   location: "Chongqing, China",
   social: [
+    {
+      label: "Google Scholar",
+      url: "https://scholar.google.com/citations?user=BnrvbhMAAAAJ&hl=en",
+      icon: "scholar",
+    },
     {
       label: "GitHub",
       url: "https://github.com/imamahasane",
@@ -17,6 +24,16 @@ export const profile: Profile = {
       label: "LinkedIn",
       url: "https://linkedin.com/in/imamahasane",
       icon: "linkedin",
+    },
+    {
+      label: "ORCID",
+      url: "https://orcid.org/0009-0009-8407-2071",
+      icon: "orcid",
+    },
+    {
+      label: "OpenReview",
+      url: "https://openreview.net/profile?id=~Md_Imam_Ahasan1",
+      icon: "openreview",
     },
     {
       label: "Email",
