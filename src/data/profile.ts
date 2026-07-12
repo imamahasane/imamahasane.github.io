@@ -2,8 +2,7 @@ import type { Profile } from "@/types";
 
 export const profile: Profile = {
   name: "Md Imam Ahasan",
-  tagline:
-    "Computer Science Researcher working on Physics-Informed Deep Learning and Medical AI.",
+  tagline: "AI Researcher working on Computer Vision and Medical Imaging.",
   email: "emamahasane@gmail.com",
   secondaryEmail: "emamahasane@stu.cqu.edu.cn",
   wechatId: "imamahasane",

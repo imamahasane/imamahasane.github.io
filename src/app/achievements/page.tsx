@@ -3,6 +3,7 @@ import Section from "@/components/Section";
 import AchievementCard from "@/components/AchievementCard";
 import MotionSection from "@/components/MotionSection";
 import { achievements } from "@/data/achievements";
+import { startYear } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Achievements",
@@ -11,7 +12,9 @@ export const metadata: Metadata = {
 };
 
 export default function AchievementsPage() {
-  const timelineItems = achievements.filter((a) => a.category !== "service");
+  const timelineItems = achievements
+    .filter((a) => a.category !== "service")
+    .sort((a, b) => startYear(b.date) - startYear(a.date));
   const serviceItems = achievements.filter((a) => a.category === "service");
 
   return (

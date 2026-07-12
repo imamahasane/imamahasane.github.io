@@ -27,14 +27,15 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: profile.name,
-  jobTitle: "Computer Science Researcher / PhD Applicant",
+  alternateName: "Imam Ahasan",
+  jobTitle: "AI and Computer Vision Researcher / PhD Applicant",
   affiliation: {
     "@type": "CollegeOrUniversity",
     name: profile.affiliation,
   },
   email: `mailto:${profile.email}`,
   sameAs: profile.social
-    .filter((s) => s.icon === "github" || s.icon === "linkedin")
+    .filter((s) => s.icon !== "mail")
     .map((s) => s.url),
 };
 
@@ -56,19 +57,21 @@ export default function Home() {
               {profile.tagline}
             </h1>
             <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted">
-              I work on diffusion models and generative priors for inverse
-              problems in medical imaging, with a focus on low-dose CT
-              reconstruction.
+              My primary focus is physics-informed diffusion models and
+              generative priors for medical image reconstruction —
+              particularly low-dose CT — alongside broader work in visual
+              recognition and scene understanding.
             </p>
             <p className="mt-6 max-w-2xl leading-relaxed text-foreground">
-              I investigate physics-consistent generative models for medical
-              image reconstruction, with an emphasis on low-dose computed
-              tomography. My work combines diffusion models and generative
-              adversarial networks with explicit physical constraints from
-              the CT measurement process, aiming to make dose reduction and
-              image fidelity less of a trade-off. I am completing an M.Sc.
-              in Computer Science at Chongqing University, where this
-              research forms the basis of my thesis.
+              I am an AI and computer vision researcher working across
+              medical image analysis and visual perception. My thesis
+              develops physics-consistent diffusion and adversarial models
+              that reconstruct diagnostic-quality CT images from
+              reduced-radiation scans, and my broader research spans retinal
+              and dermatological image segmentation and visual perception
+              for autonomous systems. I am completing an M.Sc. in Computer
+              Science at Chongqing University, where this research forms the
+              basis of my thesis.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-6">
               <Link
@@ -87,7 +90,7 @@ export default function Home() {
             <SocialLinks links={profile.social} className="mt-8" />
           </div>
           <AvatarPlaceholder
-            src="/images/profile.png"
+            src="/images/profile.jpg"
             size={140}
             className="hidden md:block"
           />

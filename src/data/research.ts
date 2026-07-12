@@ -41,9 +41,9 @@ export const education: EducationItem[] = [
 ];
 
 export const researchInterests: string[] = [
+  "Computer Vision",
   "Medical Imaging",
   "Diffusion Models",
-  "Computer Vision",
   "Generative Models",
   "Scientific Machine Learning",
 ];
@@ -54,17 +54,17 @@ export const researchInterests: string[] = [
  * head the way the real thing needs to. Read it, disagree with parts of it,
  * and rewrite until it sounds like you, not like a summary of your CV.
  */
-export const researchStatement = `I work on physics-consistent generative models for inverse problems in
-medical imaging, with a focus on reconstructing diagnostic-quality CT images from low-dose scans. My
-thesis developed DACD, a cold diffusion model that reformulates the corruption process around the actual
-physics of dose-reduced acquisition — Poisson thinning — rather than treating scanner noise as a generic
-signal to denoise, and constrains reconstruction to stay consistent with the measured sinogram throughout.
-That combination is what produced both of DACD's results: a PSNR improvement over prior state-of-the-art
-methods, and a 3.3× faster inference time, since a forward process matched to the true degradation needs
-fewer reverse steps to invert than a generic one does. GenDiff extends this line of work with explicit
-dose and anatomy conditioning, so a single trained model generalizes to dose levels and body regions it
-was never directly trained on — the generalization failure that limits most learned reconstruction methods
-from real clinical deployment.`;
+export const researchStatement = `I am an AI and computer vision researcher working across medical image
+analysis and visual perception, with a primary focus on physics-consistent generative models for inverse
+problems in medical imaging. My thesis developed DACD, a cold diffusion model that reformulates image
+reconstruction around the actual physics of dose-reduced CT acquisition — Poisson thinning — rather than
+treating scanner noise as a generic signal to denoise, achieving a PSNR improvement over prior
+state-of-the-art methods alongside a 3.3× faster inference time. GenDiff extends this line of work with
+explicit dose and anatomy conditioning, enabling a single trained model to generalize across dose levels
+and anatomical regions it was never directly trained on. Beyond CT reconstruction, my research spans
+retinal vessel segmentation, dermatological image analysis, and visual perception for autonomous systems —
+work that has shaped how I think about generalization and robustness across the visual recognition
+problems I care about, not only generative reconstruction.`;
 
 /**
  * DRAFT — same caveat as above. This is the sentence a committee reads to
