@@ -86,7 +86,11 @@ export default function Home() {
             </div>
             <SocialLinks links={profile.social} className="mt-8" />
           </div>
-          <AvatarPlaceholder size={140} className="hidden md:block" />
+          <AvatarPlaceholder
+            src="/images/profile.png"
+            size={140}
+            className="hidden md:block"
+          />
         </div>
       </Section>
 

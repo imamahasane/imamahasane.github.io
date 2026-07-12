@@ -8,6 +8,7 @@ export const achievements: AchievementItem[] = [
     date: "Jun 2026",
     description: "Awarded to the top 1% of international graduates.",
     category: "award",
+    imageUrl: "/images/achievements/cqu-outstanding-graduate.jpg",
   },
   {
     id: "china-photo-contest",

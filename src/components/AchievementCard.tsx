@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Award, Users, Heart } from "lucide-react";
 import type { AchievementItem } from "@/types";
 
@@ -36,6 +37,22 @@ export default function AchievementCard({ item }: AchievementCardProps) {
           <p className="mt-1 text-sm leading-relaxed text-foreground">
             {item.description}
           </p>
+        )}
+        {item.imageUrl && (
+          <a
+            href={item.imageUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 block w-48 overflow-hidden rounded-md border border-border transition-opacity hover:opacity-90"
+          >
+            <Image
+              src={item.imageUrl}
+              alt={`${item.title} certificate`}
+              width={320}
+              height={224}
+              className="h-auto w-full object-cover"
+            />
+          </a>
         )}
       </div>
     </article>
