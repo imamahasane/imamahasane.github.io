@@ -80,12 +80,13 @@ export default function Home() {
               >
                 Read my research
               </Link>
-              <Link
-                href="/cv"
+              <a
+                href="/cv/Md_Imam_Ahasan_CV.pdf"
+                download
                 className="text-sm font-medium text-accent underline underline-offset-4 hover:opacity-80"
               >
                 Download CV
-              </Link>
+              </a>
             </div>
             <SocialLinks links={profile.social} className="mt-8" />
           </div>
@@ -169,6 +170,59 @@ export default function Home() {
             >
               Read more
             </Link>
+          </div>
+        </MotionSection>
+      </Section>
+
+      <Section width="prose">
+        <MotionSection>
+          <h2 className="mb-4 font-serif text-2xl font-semibold text-foreground">
+            Biography
+          </h2>
+          <p className="leading-relaxed text-foreground">
+            I was born and raised in Bangladesh, where I completed my B.Sc.
+            in Computer Science and Engineering at Daffodil International
+            University in 2021. As a graduate research assistant there, I
+            worked on early deep learning pipelines for medical image
+            analysis — retinal vessel segmentation and skin lesion
+            classification — under Dr. Md Zahid Hasan, and briefly taught
+            ICT at Anupama International School and College in Dhaka. In
+            2023, I moved to Chongqing, China, to pursue an M.Sc. in
+            Computer Science at Chongqing University, where my research
+            shifted toward physics-informed generative models for low-dose
+            CT reconstruction under Dr. Guangchao Yang. Outside the lab, I
+            co-founded Shopner Khoje, a charitable organization, in 2017,
+            and in 2026 I was recognized as one of Chongqing
+            University&rsquo;s top 1% international graduates.
+          </p>
+        </MotionSection>
+      </Section>
+
+      <Section width="prose" className="pt-0">
+        <MotionSection>
+          <h2 className="mb-3 font-serif text-2xl font-semibold text-foreground">
+            Get in Touch
+          </h2>
+          <p className="text-muted">
+            I welcome inquiries from prospective advisors, collaborators,
+            and researchers.
+          </p>
+          <div className="mt-4 flex flex-col gap-2 text-sm">
+            <a
+              href={`mailto:${profile.email}`}
+              className="text-accent underline underline-offset-2 hover:opacity-80"
+            >
+              {profile.email}
+            </a>
+            {profile.secondaryEmail && (
+              <a
+                href={`mailto:${profile.secondaryEmail}`}
+                className="text-accent underline underline-offset-2 hover:opacity-80"
+              >
+                {profile.secondaryEmail}{" "}
+                <span className="text-muted">(Chongqing University)</span>
+              </a>
+            )}
           </div>
         </MotionSection>
       </Section>
