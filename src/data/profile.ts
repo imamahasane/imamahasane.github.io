@@ -36,6 +36,11 @@ export const profile: Profile = {
       icon: "openreview",
     },
     {
+      label: "ResearchGate",
+      url: "https://www.researchgate.net/profile/Md-Imam-Ahasan-2",
+      icon: "researchgate",
+    },
+    {
       label: "Email",
       url: "mailto:emamahasane@gmail.com",
       icon: "mail",

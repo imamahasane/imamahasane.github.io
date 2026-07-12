@@ -72,7 +72,11 @@ export default function CvPage() {
 
       <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm">
         {profile.social
-          .filter((s) => ["scholar", "orcid", "openreview"].includes(s.icon))
+          .filter((s) =>
+            ["scholar", "orcid", "openreview", "researchgate"].includes(
+              s.icon,
+            ),
+          )
           .map((s) => (
             <a
               key={s.label}

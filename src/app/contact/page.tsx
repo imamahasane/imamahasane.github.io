@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, GraduationCap, IdCard, FileText, MessageCircle } from "lucide-react";
+import { Mail, GraduationCap, IdCard, FileText, Network, MessageCircle } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import Section from "@/components/Section";
 import { profile } from "@/data/profile";
@@ -46,6 +46,7 @@ const academicIconMap = {
   scholar: GraduationCap,
   orcid: IdCard,
   openreview: FileText,
+  researchgate: Network,
 };
 
 export default function ContactPage() {

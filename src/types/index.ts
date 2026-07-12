@@ -72,7 +72,8 @@ export interface SocialLink {
     | "file-text"
     | "scholar"
     | "orcid"
-    | "openreview";
+    | "openreview"
+    | "researchgate";
 }
 
 export interface Profile {
