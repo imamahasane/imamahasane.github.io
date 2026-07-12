@@ -19,6 +19,8 @@ const stats = [
   { value: "KAIST", label: "Collaboration" },
 ];
 
+const scholarLink = profile.social.find((s) => s.icon === "scholar");
+
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -96,7 +98,14 @@ export default function Home() {
 
       <Section width="wide" className="py-0">
         <MotionSection>
-          <StatsStrip stats={stats} />
+          <StatsStrip
+            stats={stats}
+            link={
+              scholarLink
+                ? { label: "Google Scholar", url: scholarLink.url }
+                : undefined
+            }
+          />
         </MotionSection>
       </Section>
 

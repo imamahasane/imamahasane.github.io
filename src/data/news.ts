@@ -10,7 +10,7 @@ export const newsItems: NewsItem[] = [
   {
     date: "Jul 2026",
     category: "service",
-    text: "Invited as a **Reviewer** for the Chinese Conference on Pattern Recognition and Computer Vision (**PRCV 2027**).",
+    text: "Invited as a **Reviewer** for the Chinese Conference on Pattern Recognition and Computer Vision (**PRCV 2026**).",
   },
   {
     date: "Jul 2026",
