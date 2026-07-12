@@ -1,5 +1,6 @@
 export interface ReviewRole {
   venue: string;
+  role?: string;
 }
 
 export interface VolunteerRole {
@@ -7,6 +8,8 @@ export interface VolunteerRole {
 }
 
 export const peerReview: ReviewRole[] = [
+  { venue: "PRCV 2027" },
+  { venue: "NeurIPS 2026", role: "Ethics Reviewer" },
   { venue: "Engineering Applications of Artificial Intelligence (EAAI)" },
   { venue: "Systems & Soft Computing" },
   { venue: "Journal of Agriculture and Food Research" },
