@@ -16,7 +16,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <nav
         aria-label="Primary"
-        className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
+        className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-10 lg:px-16"
       >
         <Link
           href="/"

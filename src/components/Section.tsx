@@ -19,7 +19,7 @@ export default function Section({
     <Tag id={id} className={cn("py-16 md:py-24", className)}>
       <div
         className={cn(
-          "mx-auto px-6",
+          "mx-auto px-6 md:px-10 lg:px-16",
           width === "prose" ? "max-w-3xl" : "max-w-6xl",
         )}
       >
