@@ -20,8 +20,7 @@ const stats = [
   { value: "KAIST", label: "Collaboration" },
 ];
 
-const recentHighlights = achievements
-  .filter((a) => a.category !== "service")
+const news = achievements
   .sort((a, b) => startYear(b.date) - startYear(a.date))
   .slice(0, 3);
 
@@ -110,7 +109,7 @@ export default function Home() {
         <MotionSection>
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <h2 className="font-serif text-2xl font-semibold text-foreground">
-              Recent Highlights
+              News
             </h2>
             <Link
               href="/achievements"
@@ -121,7 +120,7 @@ export default function Home() {
           </div>
         </MotionSection>
         <div className="space-y-4">
-          {recentHighlights.map((item, i) => (
+          {news.map((item, i) => (
             <MotionSection key={item.id} index={i}>
               <AchievementCard item={item} />
             </MotionSection>
