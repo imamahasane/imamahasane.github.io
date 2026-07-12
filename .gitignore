@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# internal working docs — not for the public repo
+CLAUDE.md
+CLAUDE.local.md
+PLAN.md
+STRATEGY.md
+AGENTS.md
