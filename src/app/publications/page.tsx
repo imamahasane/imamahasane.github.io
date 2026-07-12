@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Section from "@/components/Section";
 import PublicationCard from "@/components/PublicationCard";
+import Badge from "@/components/Badge";
 import MotionSection from "@/components/MotionSection";
 import { publications } from "@/data/publications";
 import { profile } from "@/data/profile";
+import { researchInterests } from "@/data/research";
 
 export const metadata: Metadata = {
   title: "Publications",
@@ -46,6 +48,13 @@ export default function PublicationsPage() {
           <strong className="text-foreground">{profile.name}</strong>{" "}
           bolded throughout.
         </p>
+        <ul className="mt-5 flex flex-wrap gap-2">
+          {researchInterests.map((interest) => (
+            <li key={interest}>
+              <Badge>{interest}</Badge>
+            </li>
+          ))}
+        </ul>
       </Section>
 
       {years.map((year) => (

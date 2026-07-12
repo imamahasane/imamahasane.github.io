@@ -7,15 +7,13 @@ import { startYear } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Achievements",
-  description:
-    "Awards, honors, and academic service, including peer review and conference volunteering.",
+  description: "Awards and honors.",
 };
 
 export default function AchievementsPage() {
-  const timelineItems = achievements
-    .filter((a) => a.category !== "service")
-    .sort((a, b) => startYear(b.date) - startYear(a.date));
-  const serviceItems = achievements.filter((a) => a.category === "service");
+  const timelineItems = [...achievements].sort(
+    (a, b) => startYear(b.date) - startYear(a.date),
+  );
 
   return (
     <>
@@ -28,21 +26,6 @@ export default function AchievementsPage() {
       <Section width="wide" className="pt-0">
         <div className="space-y-4">
           {timelineItems.map((item, i) => (
-            <MotionSection key={item.id} index={i}>
-              <AchievementCard item={item} />
-            </MotionSection>
-          ))}
-        </div>
-      </Section>
-
-      <Section width="wide" className="pt-0">
-        <MotionSection>
-          <h2 className="mb-6 font-serif text-2xl font-semibold text-foreground">
-            Academic Service
-          </h2>
-        </MotionSection>
-        <div className="space-y-4">
-          {serviceItems.map((item, i) => (
             <MotionSection key={item.id} index={i}>
               <AchievementCard item={item} />
             </MotionSection>

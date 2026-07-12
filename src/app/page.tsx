@@ -9,7 +9,9 @@ import AvatarPlaceholder from "@/components/AvatarPlaceholder";
 import MotionSection from "@/components/MotionSection";
 import StatsStrip from "@/components/StatsStrip";
 import AchievementCard from "@/components/AchievementCard";
+import ResearchCard from "@/components/ResearchCard";
 import { startYear } from "@/lib/utils";
+import { flagshipProjects, forwardLookingDirection } from "@/data/research";
 
 const stats = [
   { value: String(publications.length), label: "Publications" },
@@ -75,7 +77,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-6">
               <Link
-                href="/research"
+                href="#flagship-projects"
                 className="rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
               >
                 Read my research
@@ -150,27 +152,23 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section width="wide" className="pt-0">
+      <Section width="wide" className="pt-0" id="flagship-projects">
         <MotionSection>
-          <div className="rounded-lg border border-border bg-accent-soft p-6 md:p-8">
-            <p className="text-sm font-medium uppercase tracking-wide text-accent">
-              Featured Project
-            </p>
-            <h3 className="mt-2 font-serif text-xl font-semibold text-foreground">
-              DACD: Dose-Aware Cold Diffusion with Physics Consistency
-            </h3>
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground">
-              A Poisson-thinning cold diffusion model with physics
-              consistency for low-dose CT reconstruction — +1.20 dB PSNR
-              over SOTA, 3.3× faster inference. IJCNN 2026, CCF-C, accepted.
-            </p>
-            <Link
-              href="/research#dacd"
-              className="mt-4 inline-block text-sm font-medium text-accent underline underline-offset-4 hover:opacity-80"
-            >
-              Read more
-            </Link>
-          </div>
+          <h2 className="mb-8 font-serif text-2xl font-semibold text-foreground">
+            Flagship Projects
+          </h2>
+        </MotionSection>
+        <div className="space-y-6">
+          {flagshipProjects.map((project, i) => (
+            <MotionSection key={project.slug} index={i}>
+              <ResearchCard project={project} />
+            </MotionSection>
+          ))}
+        </div>
+        <MotionSection>
+          <p className="mt-8 max-w-2xl leading-relaxed text-muted">
+            {forwardLookingDirection}
+          </p>
         </MotionSection>
       </Section>
 

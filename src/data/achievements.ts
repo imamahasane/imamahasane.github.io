@@ -47,20 +47,4 @@ export const achievements: AchievementItem[] = [
     description: "Charitable organization.",
     category: "community",
   },
-  {
-    id: "peer-reviewer",
-    title: "Peer Reviewer",
-    date: "Ongoing",
-    description:
-      "Engineering Applications of Artificial Intelligence (EAAI), Systems & Soft Computing, Journal of Agriculture and Food Research, PRCV 2025, IJCNN 2026.",
-    category: "service",
-  },
-  {
-    id: "conference-volunteer",
-    title: "Conference Volunteer",
-    date: "2018 – 2025",
-    description:
-      "2018 ICPC Asia Dhaka Regional Contest; 6th Intl. Conf. on Electronic Engineering and Informatics 2024; IEEE Intl. Conf. on Electrical Energy Conversion Systems and Control 2025.",
-    category: "service",
-  },
 ];

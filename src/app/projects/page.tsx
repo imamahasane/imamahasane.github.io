@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Section from "@/components/Section";
 import ProjectCard from "@/components/ProjectCard";
 import MotionSection from "@/components/MotionSection";
@@ -7,7 +8,7 @@ import { projects } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Research code and open-source projects, distinct from the paper-centric Research page.",
+    "Research code and open-source projects, distinct from the flagship research described on the homepage.",
 };
 
 export default function ProjectsPage() {
@@ -18,14 +19,15 @@ export default function ProjectsPage() {
           Projects
         </h1>
         <p className="mt-3 text-muted">
-          Research code and engineering work, distinct from the paper-centric{" "}
-          <a
-            href="/research"
+          Research code and engineering work, distinct from the flagship
+          projects described on the{" "}
+          <Link
+            href="/#flagship-projects"
             className="text-accent underline underline-offset-2"
           >
-            Research
-          </a>{" "}
-          page.
+            homepage
+          </Link>
+          .
         </p>
       </Section>
 
