@@ -1,0 +1,76 @@
+---
+title: "DACD, in Plain Terms: Cold Diffusion Meets CT Physics"
+date: "2026-07-12"
+summary: "A conceptual walkthrough of the core idea behind DACD — why modeling the physics of low-dose CT acquisition directly, instead of treating noise as generic corruption, is what makes the reconstruction both more accurate and faster."
+draft: true
+tags: ["diffusion models", "low-dose CT", "DACD"]
+---
+
+**Draft — not yet reviewed for publication.** This post is scaffolding for the
+blog pipeline; the technical claims below need your review and, where the
+underlying paper isn't public yet, your judgment on what's safe to describe
+before it's officially out. See STRATEGY.md and PLAN.md §8 for the blog
+workflow this fits into. Remove this notice and the `draft: true` frontmatter
+flag once you've reviewed and personalized the content.
+
+## The problem
+
+Lower-dose CT scans are safer for patients — less ionizing radiation — but
+the trade-off is noisier raw measurements, which makes reconstructing a
+diagnostically useful image harder. Most learned reconstruction methods
+treat this as a generic denoising problem: take a noisy image, learn to map
+it back to a clean one, using whatever noise model is convenient for
+training.
+
+DACD (Dose-Aware Cold Diffusion with Physics Consistency) starts from a
+different premise: the noise in a low-dose CT scan isn't generic. It comes
+from a specific, well-understood physical process — photon-limited
+measurement at the detector — and a reconstruction method that models that
+process explicitly should do better than one that doesn't.
+
+## Cold diffusion, briefly
+
+Standard diffusion models (DDPM-style) learn to reverse a fixed corruption
+process, typically Gaussian noise added over many steps:
+
+$$
+x_t = \sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \epsilon,\qquad \epsilon \sim \mathcal{N}(0, I)
+$$
+
+"Cold diffusion" generalizes this idea: the forward corruption process
+doesn't have to be Gaussian noise at all — it can be any fixed,
+deterministic degradation, as long as a network can learn to invert it step
+by step. That flexibility is what makes it a natural fit here: instead of
+corrupting a clean CT image with generic noise, DACD's forward process is
+built around **Poisson thinning** — the same statistical process that
+actually governs photon-limited, low-dose acquisition. The model isn't
+learning to reverse an arbitrary corruption; it's learning to reverse the
+specific kind of information loss a real low-dose scan undergoes.
+
+## Physics consistency
+
+On top of that, DACD adds an explicit consistency constraint tying each
+reconstruction step back to the measured sinogram — the raw scanner data —
+rather than letting the model freely hallucinate plausible-looking anatomy.
+This is the part that matters most for a clinical setting: a reconstruction
+that looks sharp but drifts from what the scanner actually measured is a
+liability, not an improvement.
+
+## Why this combination helps
+
+Matching the forward process to the true physical degradation, plus
+constraining the reverse process to stay consistent with the actual
+measurement, is what produces both results reported for DACD: a PSNR
+improvement over prior state-of-the-art methods, and meaningfully faster
+inference. The speedup follows fairly directly from cold diffusion's
+structure — a well-matched forward process needs fewer reverse steps to
+invert than a generic one does.
+
+## What's next
+
+This post covers the core idea, not the full method — architecture details,
+training setup, and the full experimental comparison belong in the paper
+itself. GenDiff, the follow-up project, extends this line of work to
+generalize across dose levels and anatomical regions the model wasn't
+explicitly trained on; that's a good candidate for the next post in this
+series.
