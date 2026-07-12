@@ -49,23 +49,37 @@ export const researchInterests: string[] = [
 ];
 
 /**
- * PLACEHOLDER — needs your voice before this site is published.
- * See STRATEGY.md §3 for a fill-in-the-blank framework to draft this fast,
- * then edit into your own phrasing. A generic statement is worse than a
- * rough personal one — do not ship this unedited.
+ * DRAFT — written to unblock the page, not to ship as-is. This is my best
+ * attempt at your voice from the CV facts alone; it hasn't lived in your
+ * head the way the real thing needs to. Read it, disagree with parts of it,
+ * and rewrite until it sounds like you, not like a summary of your CV.
  */
-export const researchStatement = `[YOUR RESEARCH STATEMENT HERE — one paragraph tying your thesis work
-(physics-guided diffusion models for low-dose CT reconstruction) to where you want to take this
-research in a PhD. See STRATEGY.md §3 for a fill-in template.]`;
+export const researchStatement = `I work on physics-consistent generative models for inverse problems in
+medical imaging, with a focus on reconstructing diagnostic-quality CT images from low-dose scans. My
+thesis developed DACD, a cold diffusion model that reformulates the corruption process around the actual
+physics of dose-reduced acquisition — Poisson thinning — rather than treating scanner noise as a generic
+signal to denoise, and constrains reconstruction to stay consistent with the measured sinogram throughout.
+That combination is what produced both of DACD's results: a PSNR improvement over prior state-of-the-art
+methods, and a 3.3× faster inference time, since a forward process matched to the true degradation needs
+fewer reverse steps to invert than a generic one does. GenDiff extends this line of work with explicit
+dose and anatomy conditioning, so a single trained model generalizes to dose levels and body regions it
+was never directly trained on — the generalization failure that limits most learned reconstruction methods
+from real clinical deployment.`;
 
 /**
- * PLACEHOLDER — see STRATEGY.md §3. This is the one sentence that signals a
- * research program, not just a finished thesis. Do not ship this unedited.
+ * DRAFT — same caveat as above. This is the sentence a committee reads to
+ * decide if they're funding a research trajectory, not a finished thesis;
+ * it needs to reflect what you actually want to spend five years on, not
+ * what reads well.
  */
-export const forwardLookingDirection = `[YOUR FORWARD-LOOKING DIRECTION HERE — e.g. extending physics-informed
-diffusion beyond CT to other inverse-imaging modalities, or formal guarantees for generative
-reconstruction. Write this yourself; it is the piece a committee reads to decide if they're
-funding a person with a research trajectory, not just a completed thesis.]`;
+export const forwardLookingDirection = `The open question I want to pursue in a PhD is whether this
+physics-consistency principle generalizes beyond CT: most inverse problems in medical imaging — MRI
+reconstruction, PET denoising, sparse-view reconstruction more broadly — have their own well-understood
+measurement physics that current generative priors mostly ignore in favor of generic learned corruption
+models. I want to work out whether conditioning diffusion models on the actual forward operator of each
+modality, rather than a dataset-specific noise model, produces reconstruction methods that transfer across
+modalities instead of needing to be rebuilt for each one — and, longer term, whether that physics grounding
+can support formal reconstruction guarantees that purely data-driven priors can't offer.`;
 
 export const flagshipProjects: ResearchProject[] = [
   {
