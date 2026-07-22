@@ -17,6 +17,7 @@ export const publications: Publication[] = [
     ranking: "CCF-C",
     status: "accepted",
     year: 2026,
+    codeUrl: "https://github.com/imamahasane/DACD",
     gloss:
       "Reconstructs clean CT images from noisy low-dose scans more accurately and 3.3× faster than prior methods.",
     bibtex: `@inproceedings{ahasan2026dacd,
@@ -43,6 +44,7 @@ export const publications: Publication[] = [
     status: "published",
     year: 2025,
     doi: "10.1007/978-981-95-5631-1_35",
+    codeUrl: "https://github.com/imamahasane/GeGLUNet",
     gloss:
       "Segments blood vessels in retinal scans more precisely to support earlier diagnosis of eye disease.",
     bibtex: `@inproceedings{noor2025geglunet,
@@ -94,6 +96,7 @@ export const publications: Publication[] = [
     ranking: "EI",
     status: "accepted",
     year: 2026,
+    codeUrl: "https://github.com/imamahasane/MoSSGate",
     gloss:
       "Improves automatic detection of skin lesion boundaries in dermatology images.",
     bibtex: `@inproceedings{malik2026mossgate,
@@ -119,6 +122,8 @@ export const publications: Publication[] = [
     ranking: "SCIE",
     status: "accepted",
     year: 2026,
+    doi: "10.32604/cmc.2026.083456",
+    codeUrl: "https://github.com/imamahasane/DCANet",
     gloss:
       "Detects road lane markings more robustly on curved and poorly marked roads for autonomous driving.",
     bibtex: `@article{waheed2026lane,
@@ -144,6 +149,8 @@ export const publications: Publication[] = [
     ranking: "SCIE",
     status: "under-review",
     year: 2026,
+    pdfUrl: "https://arxiv.org/abs/2607.11941",
+    codeUrl: "https://github.com/imamahasane/GenDiff",
     gloss:
       "Extends low-dose CT reconstruction to generalize across unseen radiation doses and body regions without retraining.",
     bibtex: `@article{ahasan2026gendiff,
@@ -171,6 +178,8 @@ export const publications: Publication[] = [
     ranking: "CCF-B",
     status: "under-review",
     year: 2026,
+    pdfUrl: "https://arxiv.org/abs/2607.11939",
+    codeUrl: "https://github.com/imamahasane/TSCA-Net",
     gloss:
       "Forecasts where pedestrians will walk next from multiple sensor views, with interpretable attention maps.",
     bibtex: `@inproceedings{rahman2026tscanet,
@@ -197,6 +206,7 @@ export const publications: Publication[] = [
     ranking: "SCIE",
     status: "under-review",
     year: 2026,
+    codeUrl: "https://github.com/imamahasane/LightGAN-LD",
     gloss:
       "A lighter, faster GAN for low-dose CT reconstruction suited to real-time clinical deployment.",
     bibtex: `@article{ahasan2026lightganld,
@@ -249,6 +259,8 @@ export const publications: Publication[] = [
     ranking: "SCIE",
     status: "under-review",
     year: 2026,
+    pdfUrl: "https://arxiv.org/abs/2607.10188",
+    codeUrl: "https://github.com/imamahasane/BiLoG-Net",
     gloss:
       "Jointly locates and classifies findings in mammograms to support breast cancer screening.",
     bibtex: `@article{noor2026qbilofunet,
@@ -275,6 +287,8 @@ export const publications: Publication[] = [
     ranking: "SCIE",
     status: "under-review",
     year: 2026,
+    pdfUrl: "https://arxiv.org/abs/2607.12293",
+    codeUrl: "https://github.com/imamahasane/ADAPT",
     gloss:
       "Combines multiple sensor modalities to predict pedestrian crossing intent more robustly.",
     bibtex: `@article{rahman2026crossmodal,
@@ -283,6 +297,33 @@ export const publications: Publication[] = [
   journal = {PeerJ Computer Science},
   year    = {2026},
   note    = {Under review}
+}`,
+  },
+  {
+    id: "R7",
+    title:
+      "PCDiff: Physics-Conditioned Bayesian Diffusion Model for Low-Dose CT Reconstruction",
+    authors: [
+      "Md Imam Ahasan",
+      "Guangchao Yang",
+      "A F M Abdun Noor",
+      "Mohammad Azam Khan",
+    ],
+    isFirstAuthor: true,
+    venue: "Intl. Conf. on Distributed Artificial Intelligence (DAI 2026)",
+    venueType: "conference",
+    ranking: "CCF-B",
+    status: "under-review",
+    year: 2026,
+    codeUrl: "https://github.com/imamahasane/PCDiff",
+    gloss:
+      "A Bayesian diffusion model that conditions reconstruction on the CT scanner's physics to better quantify uncertainty in low-dose CT images.",
+    bibtex: `@inproceedings{ahasan2026pcdiff,
+  title     = {PCDiff: Physics-Conditioned Bayesian Diffusion Model for Low-Dose CT Reconstruction},
+  author    = {Ahasan, Md Imam and Yang, Guangchao and Noor, A F M Abdun and Khan, Mohammad Azam},
+  booktitle = {International Conference on Distributed Artificial Intelligence (DAI)},
+  year      = {2026},
+  note      = {Under review}
 }`,
   },
 ];

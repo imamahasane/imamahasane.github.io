@@ -18,6 +18,7 @@ export const peerReview: ReviewRole[] = [
 ];
 
 export const conferenceVolunteering: VolunteerRole[] = [
+  { event: "ICCNC 2026" },
   { event: "2018 ICPC Asia Dhaka Regional Contest" },
   { event: "6th Intl. Conf. on Electronic Engineering and Informatics 2024" },
   {

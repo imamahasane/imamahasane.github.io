@@ -100,6 +100,7 @@ export const flagshipProjects: ResearchProject[] = [
     status: "accepted",
     publicationId: "C1",
     technologies: ["PyTorch", "Cold Diffusion", "CT/Sinogram Processing"],
+    codeUrl: "https://github.com/imamahasane/DACD",
   },
   {
     slug: "gendiff",
@@ -118,6 +119,8 @@ export const flagshipProjects: ResearchProject[] = [
     status: "under-review",
     publicationId: "R1",
     technologies: ["PyTorch", "Diffusion Models", "Domain Generalization"],
+    paperUrl: "https://arxiv.org/abs/2607.11941",
+    codeUrl: "https://github.com/imamahasane/GenDiff",
   },
   {
     slug: "lightgan-ld",
@@ -136,6 +139,6 @@ export const flagshipProjects: ResearchProject[] = [
     status: "under-review",
     publicationId: "R3",
     technologies: ["PyTorch", "GANs", "Sinogram Processing"],
-    codeUrl: undefined,
+    codeUrl: "https://github.com/imamahasane/LightGAN-LD",
   },
 ];

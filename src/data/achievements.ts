@@ -12,11 +12,10 @@ export const achievements: AchievementItem[] = [
   },
   {
     id: "china-photo-contest",
-    title:
-      "3rd Prize, \"The Chinese New Year in My Eyes\" Essay & Video Competition",
+    title: "3rd Prize, \"China in My Eyes\" Contest",
     organization:
       "Center of International Students Mobility Service, Chongqing University",
-    date: "May 2024",
+    date: "Oct 2024",
     category: "award",
     imageUrl: "/images/achievements/chinese-new-year-essay-contest.jpg",
   },
@@ -46,5 +45,12 @@ export const achievements: AchievementItem[] = [
     date: "Feb 2017 – Present",
     description: "Charitable organization.",
     category: "community",
+  },
+  {
+    id: "diu-best-club-performance",
+    title: "Best Club Performance Award",
+    organization: "Daffodil International University",
+    date: "Feb 2020",
+    category: "award",
   },
 ];
