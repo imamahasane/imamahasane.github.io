@@ -1,5 +1,10 @@
-import { Mail, GraduationCap, FileText, IdCard, Network } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import { Mail, GraduationCap, FileText } from "lucide-react";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  OrcidIcon,
+  ResearchgateIcon,
+} from "@/components/icons";
 import type { SocialLink } from "@/types";
 import { cn } from "@/lib/utils";
 
@@ -10,9 +15,9 @@ const iconMap = {
   "graduation-cap": GraduationCap,
   "file-text": FileText,
   scholar: GraduationCap,
-  orcid: IdCard,
+  orcid: OrcidIcon,
   openreview: FileText,
-  researchgate: Network,
+  researchgate: ResearchgateIcon,
 };
 
 interface SocialLinksProps {
