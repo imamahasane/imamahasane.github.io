@@ -56,8 +56,8 @@ export default function Home() {
             </h1>
             <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted">
               My primary focus is physics-informed diffusion models and
-              generative priors for medical image reconstruction —
-              particularly low-dose CT — alongside broader work in visual
+              generative priors for medical image reconstruction -
+              particularly low-dose CT - alongside broader work in visual
               recognition and scene understanding.
             </p>
             <p className="mt-6 max-w-2xl leading-relaxed text-foreground">
@@ -171,8 +171,8 @@ export default function Home() {
             in Computer Science and Engineering at Daffodil International
             University in 2021. As a graduate research assistant there, I
             worked on early deep learning pipelines for medical image
-            analysis — retinal vessel segmentation and skin lesion
-            classification — under Dr. Md Zahid Hasan, and briefly taught
+            analysis - retinal vessel segmentation and skin lesion
+            classification - under Dr. Md Zahid Hasan, and briefly taught
             ICT at Anupama International School and College in Dhaka. In
             2023, I moved to Chongqing, China, to pursue an M.Sc. in
             Computer Science at Chongqing University, where my research

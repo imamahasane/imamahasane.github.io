@@ -14,6 +14,7 @@ export const peerReview: ReviewRole[] = [
   { venue: "Systems & Soft Computing" },
   { venue: "Journal of Agriculture and Food Research" },
   { venue: "PRCV 2025" },
+  { venue: "PRCV 2026" },
   { venue: "IJCNN 2026" },
 ];
 

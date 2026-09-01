@@ -21,7 +21,7 @@ export const achievements: AchievementItem[] = [
   },
   {
     id: "byd-china-youth-run",
-    title: "Finisher, BYD China Youth Run — Chongqing University Station",
+    title: "Finisher, BYD China Youth Run - Chongqing University Station",
     organization: "Chongqing University",
     date: "May 2026",
     description:
@@ -42,7 +42,7 @@ export const achievements: AchievementItem[] = [
   {
     id: "shopner-khoje-cofounder",
     title: "Co-Founder, Shopner Khoje Foundation",
-    date: "Feb 2017 – Present",
+    date: "Feb 2017 - Present",
     description: "Charitable organization.",
     category: "community",
   },

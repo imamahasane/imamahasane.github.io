@@ -170,12 +170,11 @@ export const publications: Publication[] = [
       "Guangchao Yang",
       "A F M Abdun Noor",
       "Md Imam Ahasan",
-      "Md Mahfuzur Rahman",
     ],
     isFirstAuthor: false,
-    venue: "IEEE Intl. Conf. on Data Mining (ICDM 2026)",
+    venue: "Intl. Conf. on Mobility, Sensing and Networking (MSN 2026)",
     venueType: "conference",
-    ranking: "CCF-B",
+    ranking: "CCF-C",
     status: "under-review",
     year: 2026,
     pdfUrl: "https://arxiv.org/abs/2607.11939",
@@ -184,8 +183,8 @@ export const publications: Publication[] = [
       "Forecasts where pedestrians will walk next from multiple sensor views, with interpretable attention maps.",
     bibtex: `@inproceedings{rahman2026tscanet,
   title     = {TSCA-Net: Temporal-Spatial Clique Attention for Interpretable Multimodal Pedestrian Trajectory Prediction},
-  author    = {Rahman, Md Mustafizur and Yang, Guangchao and Noor, A F M Abdun and Ahasan, Md Imam and Rahman, Md Mahfuzur},
-  booktitle = {IEEE International Conference on Data Mining (ICDM)},
+  author    = {Rahman, Md Mustafizur and Yang, Guangchao and Noor, A F M Abdun and Ahasan, Md Imam},
+  booktitle = {International Conference on Mobility, Sensing and Networking (MSN)},
   year      = {2026},
   note      = {Under review}
 }`,
@@ -218,7 +217,7 @@ export const publications: Publication[] = [
 }`,
   },
   {
-    id: "R4",
+    id: "J2",
     title:
       "Toward Real-Time LDCT Reconstruction: A Sinogram-Encoded Lightweight GAN with Measurement-Domain Noise Suppression",
     authors: [
@@ -231,7 +230,7 @@ export const publications: Publication[] = [
     venue: "Computers, Materials and Continua (CMC)",
     venueType: "journal",
     ranking: "SCIE",
-    status: "under-review",
+    status: "accepted",
     year: 2026,
     gloss:
       "Suppresses noise directly in the raw scanner data for real-time low-dose CT reconstruction.",
@@ -239,14 +238,13 @@ export const publications: Publication[] = [
   title   = {Toward Real-Time LDCT Reconstruction: A Sinogram-Encoded Lightweight GAN with Measurement-Domain Noise Suppression},
   author  = {Ahasan, Md Imam and Noor, A F M Abdun and Goh, Kah Ong Michael and Mahmud, S M Hasan},
   journal = {Computers, Materials and Continua},
-  year    = {2026},
-  note    = {Under review}
+  year    = {2026}
 }`,
   },
   {
-    id: "R5",
+    id: "J3",
     title:
-      "QBiLoF-U-Net: Bi-Context Location-Aware Feature Modeling for Joint Mammographic Segmentation and Classification",
+      "BiLoG-Net: A Bi-Context Location-Guided Network for Breast Mass Segmentation and Malignancy Classification in Mammography",
     authors: [
       "A F M Abdun Noor",
       "Md Imam Ahasan",
@@ -257,18 +255,17 @@ export const publications: Publication[] = [
     venue: "Computer Modeling in Engineering and Sciences (CMES)",
     venueType: "journal",
     ranking: "SCIE",
-    status: "under-review",
+    status: "accepted",
     year: 2026,
     pdfUrl: "https://arxiv.org/abs/2607.10188",
     codeUrl: "https://github.com/imamahasane/BiLoG-Net",
     gloss:
       "Jointly locates and classifies findings in mammograms to support breast cancer screening.",
-    bibtex: `@article{noor2026qbilofunet,
-  title   = {QBiLoF-U-Net: Bi-Context Location-Aware Feature Modeling for Joint Mammographic Segmentation and Classification},
+    bibtex: `@article{noor2026bilognet,
+  title   = {BiLoG-Net: A Bi-Context Location-Guided Network for Breast Mass Segmentation and Malignancy Classification in Mammography},
   author  = {Noor, A F M Abdun and Ahasan, Md Imam and Goh, Kah Ong Michael and Mahmud, S M Hasan},
   journal = {Computer Modeling in Engineering and Sciences},
-  year    = {2026},
-  note    = {Under review}
+  year    = {2026}
 }`,
   },
   {
@@ -310,20 +307,20 @@ export const publications: Publication[] = [
       "Mohammad Azam Khan",
     ],
     isFirstAuthor: true,
-    venue: "Intl. Conf. on Distributed Artificial Intelligence (DAI 2026)",
-    venueType: "conference",
-    ranking: "CCF-B",
+    venue: "Computer Modeling in Engineering and Sciences (CMES)",
+    venueType: "journal",
+    ranking: "SCIE",
     status: "under-review",
     year: 2026,
     codeUrl: "https://github.com/imamahasane/PCDiff",
     gloss:
       "A Bayesian diffusion model that conditions reconstruction on the CT scanner's physics to better quantify uncertainty in low-dose CT images.",
-    bibtex: `@inproceedings{ahasan2026pcdiff,
-  title     = {PCDiff: Physics-Conditioned Bayesian Diffusion Model for Low-Dose CT Reconstruction},
-  author    = {Ahasan, Md Imam and Yang, Guangchao and Noor, A F M Abdun and Khan, Mohammad Azam},
-  booktitle = {International Conference on Distributed Artificial Intelligence (DAI)},
-  year      = {2026},
-  note      = {Under review}
+    bibtex: `@article{ahasan2026pcdiff,
+  title   = {PCDiff: Physics-Conditioned Bayesian Diffusion Model for Low-Dose CT Reconstruction},
+  author  = {Ahasan, Md Imam and Yang, Guangchao and Noor, A F M Abdun and Khan, Mohammad Azam},
+  journal = {Computer Modeling in Engineering and Sciences},
+  year    = {2026},
+  note    = {Under review}
 }`,
   },
 ];

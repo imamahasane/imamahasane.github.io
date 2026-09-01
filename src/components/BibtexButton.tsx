@@ -16,7 +16,7 @@ export default function BibtexButton({ bibtex }: BibtexButtonProps) {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
-      // clipboard API unavailable — silently ignore
+      // clipboard API unavailable - silently ignore
     }
   }
 
