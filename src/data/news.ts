@@ -8,6 +8,16 @@ export interface NewsItem {
 
 export const newsItems: NewsItem[] = [
   {
+    date: "Sep 2026",
+    category: "paper",
+    text: "**BiLoG-Net: A Bi-Context Location-Guided Network for Breast Mass Segmentation and Malignancy Classification in Mammography** accepted at Computer Modeling in Engineering and Sciences (**CMES**, SCIE).",
+  },
+  {
+    date: "Aug 2026",
+    category: "paper",
+    text: "**Toward Real-Time LDCT Reconstruction: A Sinogram-Encoded Lightweight GAN with Measurement-Domain Noise Suppression** accepted at Computers, Materials and Continua (**CMC**, SCIE).",
+  },
+  {
     date: "Jul 2026",
     category: "service",
     text: "Invited as a **Reviewer** for the Chinese Conference on Pattern Recognition and Computer Vision (**PRCV 2026**).",
