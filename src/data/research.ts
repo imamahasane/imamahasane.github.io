@@ -5,17 +5,17 @@ export const researchExperience: TeachingItem[] = [
     role: "Graduate Research Assistant - Computer Vision Lab",
     organization: "Chongqing University",
     location: "China",
-    period: "Sep 2023 - Jun 2026",
+    period: "Sep 2024 - May 2026",
     description:
-      "Designed DACD, a Poisson-thinning cold diffusion model with physics consistency achieving +1.20 dB PSNR over SOTA and 3.3× faster inference (IJCNN 2026, CCF-C, accepted). Extended to GenDiff with dose-anatomy encoding and structural prior refinement for zero-shot generalization (PeerJ CS, SCIE, under review). Developed LightGAN-LD for real-time LDCT reconstruction in collaboration with Dr. Mohammad Azam Khan (KAIST). Supervisor: Dr. Guangchao Yang, College of Computer Science.",
+      "Designed DACD, a Poisson-thinning cold diffusion model with physics consistency achieving +1.20 dB PSNR over SOTA and 3.3× faster inference (IJCNN 2026, CCF-C, accepted). Extended to GenDiff with dose-anatomy encoding and structural prior refinement for zero-shot generalization across unseen dose levels and anatomical domains (ICASSP 2027, CCF-B, under review). Developed LightGAN-LD for real-time LDCT reconstruction in collaboration with Dr. Mohammad Azam Khan (KAIST). Supervisor: Dr. Guangchao Yang, College of Computer Science.",
   },
   {
-    role: "Graduate Research Assistant - Data Science Lab",
+    role: "Lab Assistant - Data Science Lab",
     organization: "Daffodil International University",
     location: "Bangladesh",
     period: "Jun 2020 - Jul 2021",
     description:
-      "Developed and benchmarked deep learning pipelines for retinal vessel segmentation and skin lesion classification across standard public datasets. Co-developed GeGLUNet, a retinal vessel segmentation network via attention-gated GeGLU and contrastive supervision (PRCV 2025, CCF-C, published). Supervisor: Dr. Md Zahid Hasan, Computer Science and Technology.",
+      "Built and evaluated machine learning and deep learning models for tasks such as breast cancer classification and other Kaggle-based datasets, covering data preprocessing, model training, and performance evaluation. Supervisor: Dr. Md Zahid Hasan, Computer Science and Technology.",
   },
 ];
 
@@ -25,7 +25,7 @@ export const education: EducationItem[] = [
     degree: "M.Sc. in Computer Science",
     location: "Chongqing, China",
     period: "Sep 2023 - Jun 2026",
-    gpa: "83.4 / 100 (Top 1% of international cohort)",
+    gpa: "83.4 / 100 · Fully funded by the Chongqing University President's Scholarship",
     thesis: "Research on Low-Dose Computed Tomography Image Reconstruction",
     supervisor: "Dr. Guangchao Yang, College of Computer Science, CQU",
   },
@@ -105,7 +105,7 @@ export const flagshipProjects: ResearchProject[] = [
   {
     slug: "gendiff",
     title:
-      "GenDiff: A Dose and Anatomy Aware Diffusion Model with Structural Prior Refinement for Low-Dose CT Reconstruction and Generalization",
+      "GenDiff: Dose and Anatomy-Aware Diffusion for Low-Dose CT Reconstruction",
     oneLiner:
       "Dose-anatomy encoding and structural prior refinement for zero-shot generalization across unseen dose levels and anatomical domains.",
     gloss:

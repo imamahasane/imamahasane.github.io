@@ -169,10 +169,10 @@ export default function Home() {
           <p className="leading-relaxed text-foreground">
             I was born and raised in Bangladesh, where I completed my B.Sc.
             in Computer Science and Engineering at Daffodil International
-            University in 2021. As a graduate research assistant there, I
-            worked on early deep learning pipelines for medical image
-            analysis - retinal vessel segmentation and skin lesion
-            classification - under Dr. Md Zahid Hasan, and briefly taught
+            University in 2021. As a lab assistant in the Data Science Lab
+            there, I built and evaluated machine learning and deep learning
+            models - including breast cancer classification - under Dr. Md
+            Zahid Hasan, and briefly taught
             ICT at Anupama International School and College in Dhaka. In
             2023, I moved to Chongqing, China, to pursue an M.Sc. in
             Computer Science at Chongqing University, where my research

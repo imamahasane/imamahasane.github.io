@@ -10,6 +10,7 @@ export const publications: Publication[] = [
       "Guangchao Yang",
       "A F M Abdun Noor",
       "S M Hasan Mahmud",
+      "Md Mahfuzur Rahman",
     ],
     isFirstAuthor: true,
     venue: "Intl. Joint Conf. on Neural Networks (IJCNN 2026)",
@@ -17,12 +18,14 @@ export const publications: Publication[] = [
     ranking: "CCF-C",
     status: "accepted",
     year: 2026,
+    pdfUrl:
+      "https://www.researchgate.net/publication/403606252_Dose-Aware_Cold_Diffusion_with_Physics_Consistency_for_Generalizable_Low-Dose_CT_Reconstruction",
     codeUrl: "https://github.com/imamahasane/DACD",
     gloss:
       "Reconstructs clean CT images from noisy low-dose scans more accurately and 3.3× faster than prior methods.",
     bibtex: `@inproceedings{ahasan2026dacd,
   title     = {Dose-Aware Cold Diffusion with Physics Consistency for Generalizable Low-Dose CT Reconstruction},
-  author    = {Ahasan, Md Imam and Yang, Guangchao and Noor, A F M Abdun and Mahmud, S M Hasan},
+  author    = {Ahasan, Md Imam and Yang, Guangchao and Noor, A F M Abdun and Mahmud, S M Hasan and Rahman, Md Mahfuzur},
   booktitle = {International Joint Conference on Neural Networks (IJCNN)},
   year      = {2026}
 }`,
@@ -71,6 +74,9 @@ export const publications: Publication[] = [
     ranking: "EI",
     status: "accepted",
     year: 2026,
+    pdfUrl:
+      "https://www.researchgate.net/publication/408868174_MTF-Net_Multi-Modal_Temporal_Feature_Fusion_Network_for_Pedestrian_Intention_Prediction",
+    codeUrl: "https://github.com/imamahasane/MTF-Net",
     gloss:
       "Predicts pedestrian crossing intent from video and sensor data to help autonomous vehicles react earlier.",
     bibtex: `@inproceedings{rahman2026mtfnet,
@@ -96,6 +102,8 @@ export const publications: Publication[] = [
     ranking: "EI",
     status: "accepted",
     year: 2026,
+    pdfUrl:
+      "https://www.researchgate.net/publication/408872180_MoSSGate_Memory-Modulated_State-Space_Gating_for_Skin_Lesion_Segmentation",
     codeUrl: "https://github.com/imamahasane/MoSSGate",
     gloss:
       "Improves automatic detection of skin lesion boundaries in dermatology images.",
@@ -135,30 +143,29 @@ export const publications: Publication[] = [
   },
   {
     id: "R1",
-    title:
-      "GenDiff: A Dose and Anatomy Aware Diffusion Model with Structural Prior Refinement for Low-Dose CT Reconstruction and Generalization",
+    title: "Dose and Anatomy-Aware Diffusion for Low-Dose CT Reconstruction",
     authors: [
       "Md Imam Ahasan",
-      "Guangchao Yang",
+      "Chengliang Wang",
       "A F M Abdun Noor",
-      "S M Hasan Mahmud",
+      "Guangchao Yang",
     ],
     isFirstAuthor: true,
-    venue: "PeerJ Computer Science",
-    venueType: "journal",
-    ranking: "SCIE",
+    venue: "IEEE Intl. Conf. on Acoustics, Speech and Signal Processing (ICASSP 2027)",
+    venueType: "conference",
+    ranking: "CCF-B",
     status: "under-review",
-    year: 2026,
+    year: 2027,
     pdfUrl: "https://arxiv.org/abs/2607.11941",
     codeUrl: "https://github.com/imamahasane/GenDiff",
     gloss:
       "Extends low-dose CT reconstruction to generalize across unseen radiation doses and body regions without retraining.",
-    bibtex: `@article{ahasan2026gendiff,
-  title   = {GenDiff: A Dose and Anatomy Aware Diffusion Model with Structural Prior Refinement for Low-Dose CT Reconstruction and Generalization},
-  author  = {Ahasan, Md Imam and Yang, Guangchao and Noor, A F M Abdun and Mahmud, S M Hasan},
-  journal = {PeerJ Computer Science},
-  year    = {2026},
-  note    = {Under review}
+    bibtex: `@inproceedings{ahasan2027gendiff,
+  title     = {Dose and Anatomy-Aware Diffusion for Low-Dose CT Reconstruction},
+  author    = {Ahasan, Md Imam and Wang, Chengliang and Noor, A F M Abdun and Yang, Guangchao},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year      = {2027},
+  note      = {Under review}
 }`,
   },
   {
@@ -321,6 +328,32 @@ export const publications: Publication[] = [
   journal = {Computer Modeling in Engineering and Sciences},
   year    = {2026},
   note    = {Under review}
+}`,
+  },
+  {
+    id: "R8",
+    title:
+      "DeltaPath: Gated Delta-Rule Encoding for Efficient Vehicle Trajectory Representation Learning",
+    authors: [
+      "Md Ariful Islam",
+      "Ruiyuan Li",
+      "A F M Abdun Noor",
+      "Md Imam Ahasan",
+    ],
+    isFirstAuthor: false,
+    venue: "IEEE Intl. Conf. on Acoustics, Speech and Signal Processing (ICASSP 2027)",
+    venueType: "conference",
+    ranking: "CCF-B",
+    status: "under-review",
+    year: 2027,
+    gloss:
+      "Learns compact, efficient representations of vehicle trajectories for downstream mobility analysis.",
+    bibtex: `@inproceedings{islam2027deltapath,
+  title     = {DeltaPath: Gated Delta-Rule Encoding for Efficient Vehicle Trajectory Representation Learning},
+  author    = {Islam, Md Ariful and Li, Ruiyuan and Noor, A F M Abdun and Ahasan, Md Imam},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year      = {2027},
+  note      = {Under review}
 }`,
   },
 ];
