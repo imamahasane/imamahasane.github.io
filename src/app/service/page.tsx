@@ -25,8 +25,7 @@ export default function ServicePage() {
           <ul className="list-disc space-y-2 pl-5 text-foreground">
             {peerReview.map((item) => (
               <li key={item.venue}>
-                {item.role ? `${item.role}, ` : ""}
-                {item.venue}
+                {item.role ? `${item.role} (${item.venue})` : item.venue}
               </li>
             ))}
           </ul>
