@@ -9,6 +9,11 @@ export interface NewsItem {
 export const newsItems: NewsItem[] = [
   {
     date: "Sep 2026",
+    category: "service",
+    text: "Serving as a **Reviewer** for the **NeurIPS 2026 Workshop WMHS**.",
+  },
+  {
+    date: "Sep 2026",
     category: "paper",
     text: "**BiLoG-Net: A Bi-Context Location-Guided Network for Breast Mass Segmentation and Malignancy Classification in Mammography** accepted at Computer Modeling in Engineering and Sciences (**CMES**, SCIE).",
   },
