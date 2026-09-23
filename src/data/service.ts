@@ -8,7 +8,7 @@ export interface VolunteerRole {
 }
 
 export const peerReview: ReviewRole[] = [
-  { venue: "NeurIPS 2026 Workshop WMHS" },
+  { venue: "NeurIPS 2026 Workshop on World Models for High-Stakes Health (WMHS)" },
   { venue: "NeurIPS 2026", role: "Ethics Reviewer" },
   { venue: "Engineering Applications of Artificial Intelligence (EAAI)" },
   { venue: "Systems & Soft Computing" },
