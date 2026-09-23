@@ -10,7 +10,7 @@ export const newsItems: NewsItem[] = [
   {
     date: "Sep 2026",
     category: "service",
-    text: "Serving as a **Reviewer** for the NeurIPS 2026 Workshop on **World Models for High-Stakes Health (WMHS)**.",
+    text: "Serving as a **Reviewer** for the **World Models for High-Stakes Health (WMHS)** Workshop at the Conference on Neural Information Processing Systems (**NeurIPS 2026**).",
   },
   {
     date: "Sep 2026",

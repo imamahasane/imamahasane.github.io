@@ -8,7 +8,10 @@ export interface VolunteerRole {
 }
 
 export const peerReview: ReviewRole[] = [
-  { venue: "NeurIPS 2026 Workshop on World Models for High-Stakes Health (WMHS)" },
+  {
+    venue:
+      "World Models for High-Stakes Health (WMHS) Workshop, Conference on Neural Information Processing Systems (NeurIPS 2026)",
+  },
   { venue: "NeurIPS 2026", role: "Ethics Reviewer" },
   { venue: "Engineering Applications of Artificial Intelligence (EAAI)" },
   { venue: "Systems & Soft Computing" },
