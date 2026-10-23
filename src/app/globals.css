@@ -59,6 +59,14 @@ html {
   scroll-behavior: smooth;
 }
 
+@layer base {
+  p,
+  li {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

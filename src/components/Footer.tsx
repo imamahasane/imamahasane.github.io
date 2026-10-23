@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-10 text-center sm:flex-row sm:justify-between sm:text-left md:px-10 lg:px-16">
-        <p className="text-sm text-muted">
+        <p className="text-center text-sm text-muted sm:text-left">
           © {year} {profile.name}. Built with Next.js.
         </p>
         <SocialLinks links={profile.social} />
