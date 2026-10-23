@@ -1,10 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import { profile } from "@/data/profile";
 import { firstAuthorPublications, publications } from "@/data/publications";
 import Section from "@/components/Section";
 import PublicationCard from "@/components/PublicationCard";
 import SocialLinks from "@/components/SocialLinks";
-import AvatarPlaceholder from "@/components/AvatarPlaceholder";
 import MotionSection from "@/components/MotionSection";
 import StatsStrip from "@/components/StatsStrip";
 import NewsList from "@/components/NewsList";
@@ -88,10 +88,13 @@ export default function Home() {
             </div>
             <SocialLinks links={profile.social} className="mt-8" />
           </div>
-          <AvatarPlaceholder
+          <Image
             src="/images/profile.jpg"
-            size={140}
-            className="hidden md:block"
+            alt={profile.name}
+            width={800}
+            height={600}
+            priority
+            className="hidden w-80 rounded-2xl border border-border object-cover shadow-sm md:block lg:w-96"
           />
         </div>
       </Section>
