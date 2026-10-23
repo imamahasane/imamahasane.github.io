@@ -94,7 +94,7 @@ export default function Home() {
             width={800}
             height={600}
             priority
-            className="hidden w-80 rounded-2xl border border-border object-cover shadow-sm md:block lg:w-96"
+            className="hidden w-80 shrink-0 rounded-2xl border border-border object-cover shadow-sm md:block lg:w-[26rem] xl:w-[30rem]"
           />
         </div>
       </Section>
