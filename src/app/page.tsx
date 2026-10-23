@@ -46,7 +46,7 @@ export default function Home() {
       />
 
       <Section width="wide" className="pb-8 pt-16 md:pt-24">
-        <div className="grid gap-10 md:grid-cols-[1fr_auto] md:items-start">
+        <div className="grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
           <div>
             <p className="mb-3 text-sm font-medium uppercase tracking-wide text-accent">
               PhD Applicant · Chongqing University
